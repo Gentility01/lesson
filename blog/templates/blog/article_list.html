@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<!-- #the object_list have to be like this when working with Class base view  -->
+{% for blog in object_list %}
+    <p>{{blog.id}} -  {{blog.title}}<br>{{blog.content}} </p>
+    
+
+{% endfor %} 
+
+{% endblock content %}
+
+

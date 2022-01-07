@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+ {% comment %} <h1>{{my_list}}/ {{my_number}}</h1>
+
+ <ul>
+ {% for own_list in some_list %}
+ {% if own_list == 123 %}
+    <li>item{{forloop.counter}}-{{own_list | add:5}}</li>
+{% elif  own_list == 456 %} 
+    <li>item{{forloop.counter}}-{{own_list | add:5}}</li>
+{% else %}  
+   <li>item{{forloop.counter}}-{{own_list}}</li>
+ {% endif %}
+    
+ {% endfor %}
+</ul>{% endcomment %}
+{% endblock content %} 
+
+this is the about us 

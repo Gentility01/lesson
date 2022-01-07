@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+{% for instance in my_list  %}
+{{instance.id}}   -  <a href="{{instance.id}}"> {{instance.title | capfirst}}</a> <br>
+
+{% endfor %}
+
+{% endblock content %}
+
+

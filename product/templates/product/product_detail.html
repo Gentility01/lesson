@@ -1,0 +1,10 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+this is coming from our new template created
+    <h1>{{object.title | capfirst}}</h1>
+    <p>{{object.description | slugify}}</p>
+    <p>{{object.price }}</p>
+{% endblock content %}
