@@ -38,12 +38,14 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     
+    'crispy_forms',
     
     #OWN
     'product',
     'pages',
     'blog',
-    'courses'
+    'courses',
+    'account'
 ]
 
 MIDDLEWARE = [
@@ -126,6 +128,15 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+AUTH_USER_MODEL = 'account.User'
+
+
+CRISPY_TEMPLATE_PACK = "bootstrap4"
+
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static"), "./static/",
+]
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
